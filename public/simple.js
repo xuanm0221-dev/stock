@@ -243,7 +243,7 @@ function applyTheme(t){
 themeBtn.addEventListener('click', function(){
   applyTheme(document.documentElement.classList.contains('light') ? 'dark' : 'light');
 });
-applyTheme((function(){ try{ return localStorage.getItem('divTheme')||'dark'; }catch(e){ return 'dark'; } })());
+applyTheme((function(){ try{ return localStorage.getItem('divTheme')||'light'; }catch(e){ return 'light'; } })());
 
 // 계좌 개설방법 모달
 document.querySelectorAll('.opn-btn').forEach(function(b){

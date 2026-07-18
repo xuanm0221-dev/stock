@@ -457,7 +457,7 @@ $('#simA').addEventListener('input',e=>{ simState.a=Number(e.target.value); $('#
 const themeBtn=$('#themeBtn');
 function applyTheme(t){ document.documentElement.classList.toggle('light',t==='light'); themeBtn.textContent=t==='light'?'☀️ 라이트':'🌙 다크'; try{localStorage.setItem('divTheme',t);}catch(e){} }
 themeBtn.addEventListener('click',()=>applyTheme(document.documentElement.classList.contains('light')?'dark':'light'));
-applyTheme((()=>{try{return localStorage.getItem('divTheme')||'dark';}catch(e){return 'dark';}})());
+applyTheme((()=>{try{return localStorage.getItem('divTheme')||'light';}catch(e){return 'light';}})());
 
 render();
 
