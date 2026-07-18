@@ -13,7 +13,7 @@ export default function AllPage() {
         <a className="navlink" href="/">← 간단 모드로 돌아가기</a>
       </div>
       <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />
-      <Script src="/dashboard.js" strategy="afterInteractive" />
+      <Script src="/dashboard.js?v=2" strategy="afterInteractive" />
     </>
   );
 }

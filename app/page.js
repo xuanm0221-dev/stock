@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: SIMPLE_HTML }} />
-      <Script src="/simple.js" strategy="afterInteractive" />
+      <Script src="/simple.js?v=2" strategy="afterInteractive" />
     </>
   );
 }

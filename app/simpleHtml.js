@@ -6,7 +6,7 @@ export const SIMPLE_HTML = `
       <div>
         <h1><span class="dot"></span>주식 초보를 위한 노후준비 대시보드</h1>
         <p class="subtitle">주식 잘 몰라도 괜찮아요. <b>매월 조금씩</b> S&amp;P500·대형 우량주·배당 ETF를 사서 <b>배당까지 재투자</b>하면, 시간이 알아서 노후 자산을 불려줍니다. 초보·<b>안정형</b>에 맞춰 <b>딱 필요한 것만</b> 보여줘요.</p>
-        <p class="asof">📅 데이터 기준: 불러오는 중… · 매주 자동 갱신</p>
+        <p class="asof">📅 데이터 기준: 불러오는 중… · 매일 자동 갱신</p>
       </div>
       <button class="theme-btn" id="themeBtn">🌙 다크</button>
     </div>

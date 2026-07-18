@@ -485,7 +485,7 @@ function applyLive(live){
     if(live.asofLabel){
       var a = document.querySelector('.asof');
       if(a) a.innerHTML = '📅 데이터 기준: <b style="color:var(--tx2)">' + live.asofLabel +
-        '</b> · 매주 자동 갱신 · 투자금액·환율 조정 시 예상 배당금 실시간 반영';
+        '</b> · 매일 자동 갱신 · 투자금액·환율 조정 시 예상 배당금 실시간 반영';
     }
   }catch(e){ console.warn('applyLive failed', e); }
 }

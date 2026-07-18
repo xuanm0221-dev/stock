@@ -219,7 +219,7 @@ function applyLive(live){
     }
     if(live.asofLabel){
       var a = $('.asof');
-      if(a) a.innerHTML = '📅 데이터 기준: <b style="color:var(--tx2)">'+live.asofLabel+'</b> · 매주 자동 갱신';
+      if(a) a.innerHTML = '📅 데이터 기준: <b style="color:var(--tx2)">'+live.asofLabel+'</b> · 매일 자동 갱신';
     }
   }catch(e){ console.warn('applyLive failed', e); }
 }
