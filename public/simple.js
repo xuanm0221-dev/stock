@@ -105,10 +105,14 @@ function renderRec(){
     var w = pair[1];
     var amt = monthly*w/100;
     var y = yieldOf(d);
+    var priceStr = d.cur==='USD'
+      ? '$'+d.price.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})
+      : fmt(d.price)+'원';
     wSum += w; wYield += w*y; wSafe += w*d.safety;
     var tr = document.createElement('tr');
     tr.innerHTML =
       '<td><span class="wbar" style="width:'+(w*1.4)+'px"></span>'+d.name+' <b style="color:var(--tx3);font-weight:600">'+w+'%</b></td>'+
+      '<td class="num">'+priceStr+'</td>'+
       '<td class="num">'+fmt(amt)+'원</td>'+
       '<td><span class="cyc cyc-'+d.cycle+'" style="font-size:10px;padding:2px 7px">'+d.cycle+'</span></td>'+
       '<td><span class="stars" style="font-size:10px">'+stars(d.safety)+'</span></td>'+
@@ -137,7 +141,7 @@ function renderStocks(){
       '<div class="meta2">'+
         '<span class="stars">'+stars(d.safety)+'</span>'+
         '<span class="cyc cyc-'+d.cycle+'" style="font-size:10px;padding:2px 7px">'+d.cycle+'배당</span>'+
-        '<span>현재가 '+priceStr+'</span>'+
+        '<span>종가 '+priceStr+'</span>'+
         '<span style="color:var(--accent2);font-weight:700">배당 '+(y>0?y.toFixed(2)+'%':'–')+'</span>'+
       '</div>';
     grid.appendChild(card);

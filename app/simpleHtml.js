@@ -86,7 +86,7 @@ export const SIMPLE_HTML = `
       <b>미국 전체(S&amp;P500)</b>로 성장의 기본을 깔고, <b>미국 배당성장 ETF(월배당)</b>로 배당을 재투자하며, <b>국내 대표 우량주</b>로 균형을 맞추는 가장 무난한 노후 적립 조합입니다. 셋 다 <b>국내 상장</b>이라 <b>연금저축·IRP 계좌에서도</b> 살 수 있어요(③ 참고).
     </div>
     <table class="alloc" style="margin-top:16px">
-      <thead><tr><th>종목 (비중)</th><th>매월 배정액</th><th>유형</th><th>안전</th><th>배당수익률</th></tr></thead>
+      <thead><tr><th>종목 (비중)</th><th>종가</th><th>매월 배정액</th><th>유형</th><th>안전</th><th>배당수익률</th></tr></thead>
       <tbody id="recBody"></tbody>
     </table>
     <div class="advisor-summary">
