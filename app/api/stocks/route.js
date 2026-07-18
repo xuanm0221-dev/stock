@@ -2,7 +2,9 @@ import { unstable_cache } from 'next/cache';
 import { getLiveStocks } from '../../../lib/stocks';
 
 export const runtime = 'nodejs';
-// 빌드 타임에 야후를 호출하지 않도록 동적 라우트로. 실제 호출 빈도는 아래 캐시로 제한.
+// 서울 리전에서 실행 → 네이버 시세 접근에 유리.
+export const preferredRegion = 'icn1';
+// 빌드 타임에 외부 호출하지 않도록 동적 라우트로. 실제 호출 빈도는 아래 캐시로 제한.
 export const dynamic = 'force-dynamic';
 
 // 야후 호출은 최대 6시간에 1번만 (모든 방문자가 캐시 공유).
