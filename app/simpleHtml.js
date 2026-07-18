@@ -134,6 +134,32 @@ export const SIMPLE_HTML = `
     </div>
   </div>
 
+  <div class="cmpwrap">
+    <table class="cmp">
+      <thead>
+        <tr><th>항목</th><th>🪙 연금저축펀드</th><th>🏛️ IRP</th><th>💳 ISA</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">세금 혜택</th><td>세액공제<br><span class="csub">넣은 돈 돌려받음</span></td><td>세액공제<br><span class="csub">넣은 돈 돌려받음</span></td><td>수익 비과세<br><span class="csub">벌었을 때</span></td></tr>
+        <tr><th scope="row">혜택 한도</th><td>연 <b>600만</b></td><td>연금저축과 <b>합쳐 900만</b></td><td>납입 연 2천만<br><span class="csub">총 1억</span></td></tr>
+        <tr><th scope="row">혜택 받는 때</th><td>다음 해 <b>연말정산</b></td><td>다음 해 <b>연말정산</b></td><td>팔 때 <span class="csub">(3년+ 유지)</span></td></tr>
+        <tr><th scope="row">공제율·혜택</th><td>13.2~16.5%</td><td>13.2~16.5%</td><td>200~400만 비과세<br><span class="csub">초과분 9.9%</span></td></tr>
+        <tr><th scope="row">주식(S&amp;P500)<br>담기 비중</th><td class="ok">100% 가능</td><td>70%까지<br><span class="csub">안전자산 30% 강제</span></td><td class="ok">100% 가능</td></tr>
+        <tr><th scope="row">부분인출<br><span class="csub">일부만 빼기</span></th><td class="ok">가능<br><span class="csub">계좌 유지</span></td><td class="no">어려움<br><span class="csub">전액 해지</span></td><td class="ok">비교적 자유</td></tr>
+        <tr><th scope="row">납입 의무</th><td class="ok">없음<br><span class="csub">언제든 중단 OK</span></td><td class="ok">없음<br><span class="csub">언제든 중단 OK</span></td><td>3년 이상 유지</td></tr>
+        <tr><th scope="row">언제부터 받나</th><td>만 55세+<br><span class="csub">가입 5년+</span></td><td>만 55세+<br><span class="csub">가입 5년+</span></td><td class="ok">3년 후 자유</td></tr>
+        <tr><th scope="row">55세 전 사용</th><td>16.5% 페널티</td><td>페널티+전액해지</td><td class="ok">가능(유연)</td></tr>
+        <tr><th scope="row">계좌 관리수수료</th><td class="ok">대개 없음</td><td>있을 수 있음<br><span class="csub">요즘 면제 많음</span></td><td class="ok">대개 없음</td></tr>
+        <tr><th scope="row">어디서 개설</th><td>증권사 앱</td><td>증권사 앱</td><td>증권사 <span class="csub">(중개형)</span></td></tr>
+        <tr><th scope="row">추천 순서</th><td><span class="rank">1순위</span></td><td><span class="rank">2순위</span></td><td><span class="rank">3순위</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="bignote" style="margin-top:12px;font-size:12.5px">
+    📌 <b>"30년 납입" 같은 의무 없어요</b> — 연금저축·IRP 둘 다 <b>최소 5년 유지 + 만 55세 이후 수령</b>이면 되고, <b>납입은 언제든 멈춰도</b> 됩니다(계좌·투자금은 그대로 유지). 연금으로 받을 땐 10년 이상 나눠 받으면 세금이 3.3~5.5%로 낮아요.<br>
+    💸 <b>ETF 자체 보수</b>(예: TIGER 미국S&amp;P500 연 0.07%)는 <b>계좌 종류와 무관</b>하게 항상 붙지만 아주 저렴해요(100만원당 연 700원 수준). &nbsp;·&nbsp; <b>부분인출</b> = 계좌를 안 깨고 일부만 빼는 것. &nbsp;·&nbsp; ⚠️ 연금계좌는 <b>55세까지 안 쓸 돈</b>으로 넣는 게 원칙이에요.
+  </div>
+
   <div class="fx-warn">
     <div class="fx-warn-h">🌏 외국인이신가요? — 꼭 확인하세요</div>
     <div class="fx-warn-b">
